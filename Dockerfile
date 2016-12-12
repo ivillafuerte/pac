@@ -1,8 +1,6 @@
 FROM alpine
 
-RUN apk update \
- && apk upgrade \
- && mkdir -p /app 
+RUN mkdir -p /app 
 
 RUN apk add --update \
 		bash \
